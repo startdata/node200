@@ -1,12 +1,15 @@
-const a =[176,156,155,165,166,169]
-let b = "";
+const array = ['원범','원범',''];
 
-a = b.split(" ").sort(function(a,b){
-    return a - b;
-}).join(" ");
+let result = '';
+let winner = "";
 
-if (a === b){
-    console.log("Yes")
-} else {
-    console.log("NO")
+for(let index in array){
+    let val = array[index];
+    result[val] = result[val] === undefined ? 1 : result[val] = result[val] +1 ;
 }
+
+winner = Object.keys(result).reduce(function(a,b){
+    return result[a] > result[b] ? a: b
+});
+
+console.log(`${winner}(이)가 총 ${result[winner]}표로 반장이 되었습니다.`);

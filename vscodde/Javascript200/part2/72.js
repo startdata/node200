@@ -15,3 +15,6 @@ num.__proto__.toString = () => {
 };
 
 console.log(num.toString());
+
+
+

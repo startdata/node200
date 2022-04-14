@@ -6,4 +6,4 @@ const obj = {
 };
 
 const modifiedObj = Object.entries(obj);
-console.log(modifiedObj);
+console.log(modifiedObj); 

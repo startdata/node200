@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>이벤트 처리하기 예제</title>
+    <script>
+        const inputContainer = document.getElementById("input-container")
+        console.log(inputContainer);
+        document.addEventListener('DOMContentLoaded', e => {
+            const inputContainer = document.getElementById("input-container");
+            console.log(inputContainer);
+            const inputE1 = inputContainer.querySelector('input');
+            inputE1.addEventListener('keydown', e=> {
+                console.log(`keyCode: ${e.keyCode}`);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="input-container">
+        <input type="text">
+        <button>버튼</button>
+    </div>
+</body>
+</html>

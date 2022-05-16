@@ -13,7 +13,16 @@
         iframe1.addEventListener('load', e => {
             const iframeDocument = iframe1.contentDocument;
             iframeDocument.body.style.backgroudColor = "blue";
-        })
+            
+            const newE1 = document.createElement('div');
+            newE1.innerHTML = `<h1>iframe 안쪽 문서`;
+            newE1.style.color = 'white';
+            iframeDocument.body.appendChild(newE1);
+            setTimeout(() => {
+                const iframeWindow = iframe1.contentWindow;
+                iframeWindow.location = 'https://google-analytics.com';
+            }, 3000);
+        });
     </script>
 </body>
 </html>

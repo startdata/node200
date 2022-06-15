@@ -4,3 +4,4 @@ for (let j = 2; j <= 9; j +=1){
         console.log('%d * %d = %d', j,i,j*i);
     }
 }
+

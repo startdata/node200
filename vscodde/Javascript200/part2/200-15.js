@@ -17,3 +17,5 @@ console.log('cosh2:', sinh2);
 console.log('cosh3:', sinh3);
 console.log('tanh1:', tanh1);
 console.log('tanh2:', tanh2);
+
+

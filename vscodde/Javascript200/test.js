@@ -1,11 +1,13 @@
-let a = 10;
-let b = 60;
+let n = 12345;
+    const b = n.toString();
+    const c = b.split('');
+    const d = c.reverse();
+    
+    const f = (n) => {for(let i =0; i<d.length; i++ ){
+        const arr = [];
+        arr.push(Number(d[i]))}
+        return arr;
+    }
 
-const foo = (a) => {
-    a = 100;
-
-    a+b;
-}
-
-console.log(foo(a));
-console.log(b + a++);
+    console.log(f(n));
+    

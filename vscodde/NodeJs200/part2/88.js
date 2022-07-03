@@ -13,3 +13,4 @@ const reversed = sorted.reverse();
 console.log('reversed:', reversed);
 const sliced = reversed.slice(0,3);
 console.log('sliced:', sliced);
+// ..

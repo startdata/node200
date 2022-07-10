@@ -1,14 +1,17 @@
-// const n = 10;
-// const arr =[];
-// const a = () => {
-//     for(let i =1; i<=n; i++){
-//         let count = 0;
-//         for(let j = 1; j<n; i++){
-//             if(i%j == 0){
-//                 count += 1;
-//             }
-// }
-// if (count == 2){
-//     answer += i
-// }
-//     }
+const s = 'ppppooooyy'
+
+const solution = (s) => {
+    let answer = true;
+    let count = 0;
+    let a = s.indexOf('p')
+    let b = s.indexOf('y')
+    let c = s.indexOf('P')
+    let d = s.indexOf('Y')
+
+    while(a !== -1){
+        count++;
+        a = s.indexOf('p', a+1);
+    }
+}
+
+console.log(solution(s));

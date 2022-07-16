@@ -1,17 +1,30 @@
-const s = 'ppppooooyy'
+// const strings = ["sun", "bed", "car"]
 
-const solution = (s) => {
-    let answer = true;
-    let count = 0;
-    let a = s.indexOf('p')
-    let b = s.indexOf('y')
-    let c = s.indexOf('P')
-    let d = s.indexOf('Y')
+// function solution(strings, n){
+//     var answer = [];
+//     for(let i =0; i<strings.length; i++){
+//         let str = strings[i].split('')[n]
+//         answer.push(str)
+//     }
+//     answer.sort()
+// }
+// console.log(solution(strings,1));
+const strings = ["sun", "bed", "car"]
 
-    while(a !== -1){
-        count++;
-        a = s.indexOf('p', a+1);
-    }
+function solution(strings, n){
+    var answer = strings.sort((a,b) => {
+        if(a[n] > b[n]) return 1;
+        if(a[n] < b[n]) return -1;
+        if(a[n] === b[n]){
+            if(a>b){
+            return 1;  
+            } else if(a<b) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+    })
+    return answer;
 }
 
-console.log(solution(s));

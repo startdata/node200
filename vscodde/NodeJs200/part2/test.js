@@ -9,22 +9,10 @@
 //     answer.sort()
 // }
 // console.log(solution(strings,1));
-const strings = ["sun", "bed", "car"]
+const cc = [{a:2,b:3,c:5},{a:2,b:5,c:5},{a:2,b:5,c:5},{a:1,b:2,c:5},{a:1,b:3,c:5}]
 
-function solution(strings, n){
-    var answer = strings.sort((a,b) => {
-        if(a[n] > b[n]) return 1;
-        if(a[n] < b[n]) return -1;
-        if(a[n] === b[n]){
-            if(a>b){
-            return 1;  
-            } else if(a<b) {
-                return -1;
-            } else {
-                return 0;
-            }
-        }
-    })
-    return answer;
-}
+const bb = cc.filter(list => {
+    list.a > 2
+})
 
+console.log(bb);

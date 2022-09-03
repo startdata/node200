@@ -8,6 +8,7 @@ app.use(multipart({ uploadDir: `${__dirname}/upload` }));
 
 app.get("/", (req, res) => {
   fs.readFile("connect-multiparty.html", (error, data) => {
+    console.log(data);
     res.send(data.toString());
   });
 });

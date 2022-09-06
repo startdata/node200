@@ -12,7 +12,7 @@ const mailOptions = {
   from: "gmailFrom@gmail.com", // send address
   to: "gmailTo@gmail.com", // list of receivers
   subject: "Hello ", // Subject line
-  text: `<h1>Hello world??</h1>`,
+  text: `Hello world??`,
 };
 
 transporter.sendMail(mailOptions, (error, info) => {

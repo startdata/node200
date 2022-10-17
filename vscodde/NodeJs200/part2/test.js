@@ -1,18 +1,29 @@
-// let sstring = "abcd";
-// const rr = [...sstring];
-// const tt = (sstring, num1, num2) => {
-//   rr.splice(num1, 1, sstring[num1]);
-//   rr.splice();
-// };
+const arr1 = [
+  { name: "a", age: 1, test: 100 },
+  { name: "b", age: 2, test: 20 },
+  { name: "c", age: 3, test: 10 },
+  { name: "d", age: 4, test: 40 },
+  { name: "e", age: 1, test: 300 },
+  { name: "f", age: 6, test: 100 },
+  { name: "g", age: 5, test: 800 },
+];
 
-const aa = (n) => {
-  let answer = [];
-  for (let i = 1; i <= n; i++) {
-    if (i % 2 === 1) {
-      answer.push(i);
+const arr2 = [
+  { name: "a", age: 1, test: 100 },
+  { name: "b", age: 2, test: 20 },
+  { name: "c", age: 3, test: 10 },
+  { name: "e", age: 1, test: 300 },
+  { name: "g", age: 5, test: 800 },
+];
+
+const aa = () => {
+  let arrResult = [];
+  for (let i = 0; arr1.length; i++) {
+    for (let j = 0; arr2.length; j++) {
+      if (arr1[i].name === arr2[j].name) {
+        arrResult.push(arr1[i]);
+      }
     }
   }
-  return answer;
+  return arrResult;
 };
-
-console.log(aa(7));

@@ -27,3 +27,8 @@ const aa = () => {
   }
   return arrResult;
 };
+
+const aMinusB = arr1.filter(
+  (item) =>
+    !arr2.some((item2) => item2.name === item.name && item2.name === item.name)
+);
